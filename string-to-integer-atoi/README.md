@@ -6,7 +6,7 @@ https://leetcode.com/problems/string-to-integer-atoi
 
 ## Takeaway
 
-### C program
+### C code
 
 - boundary is key, as said:
 
@@ -16,9 +16,9 @@ If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then c
 
 In leetcode running environemnt it is 32 bit so we could not use long long type to store val\*10 which may overflow. So we may rely on `if ((val > ((unsigned int)1 << 31) / 10) || ((val == ((unsigned int)1 << 31) / 10) && number >= 8))`.
 
-- Alternatively, use big number to do the `val*10`
+- Alternatively, use big number multiplication to do the `val*10`
 
-### typescript program
+### typescript code
 
 - It is obvious that typescript is much easier to handle the boundary issues, because `number` could hold a very big number. Typescript doesn't allow `num *10 + (s[i] - '0')` where s[i] is a string, while `s[i] > "9"` is good. That is wired, that is why we have a lengthy function `digit2Num` for this purpose.
 
