@@ -18,3 +18,5 @@ if (!ret) {
 The code looks not good, we could make the ret not null before while by preprocessing.
 
 If we new each ListNode for the returned list, the result is only faster than 6%. Reuse the existing node then faster than 62%, if it doesn't care the input lists are corrupted.
+
+- can also rely on [merge-k-sroted-list](../merge-k-sorted-lists/merge-k-sorted-lists.ts)
