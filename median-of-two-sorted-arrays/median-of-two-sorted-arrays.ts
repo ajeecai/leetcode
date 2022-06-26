@@ -63,7 +63,7 @@ function radixSortDup(nums: number[]): number[] {
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
   let nums = nums1.concat(nums2);
   // console.log('unsorted nums ', nums);
-  nums = radixSort(nums);
+  nums = radixSortDup(nums);
   // console.log('sorted nums ', nums);
   const len = nums.length;
   if (len % 2) {
