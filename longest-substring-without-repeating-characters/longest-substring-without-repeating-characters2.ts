@@ -11,6 +11,7 @@ function lengthOfLongestSubstring(s: string): number {
   let r = 0;
   let num = 1;
   for (let i = 1; i < s.length; ++i) {
+    // can use indexOf
     for (let j = l; j <= r; ++j) {
       if (s[j] == s[i]) {
         l = j + 1; //left windows >>>>>
