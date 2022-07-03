@@ -17,4 +17,5 @@ In the later solutions, I would learn more great algrithoms to solve issues rath
 - [Greedy algorithm](https://blog.csdn.net/qq_42739440/article/details/97009253)
 - [Divide and conquer](https://zhuanlan.zhihu.com/p/488384476)a good [example](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/divide-and-conquer-algorithms)
 - [BackTracking](https://blog.csdn.net/changyuanchn/article/details/17354461) -[Branch-and-Bound] (https://www.cnblogs.com/xiaofanke/p/9498820.html)
-  PS. the solution to this issue is in fact Fibonacci sequence.
+
+PS. the solution to this issue is in fact Fibonacci sequence.
