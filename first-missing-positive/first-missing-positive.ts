@@ -43,7 +43,7 @@ function radixSortv2(
 
       // console.log('i is ', i, 'digit is ', digit, '10^cnt is ', 10**cnt);
       let len = sorted[digit].length;
-      if (!len || sorted[digit][len - 1] != i) {
+      if (!dedup || !len || sorted[digit][len - 1] != i) {
         sorted[digit].push(i);
       }
     });

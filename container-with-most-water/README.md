@@ -7,7 +7,7 @@ https://leetcode.com/problems/container-with-most-water/
 ## Takeaway
 
 - A simple solution is to multiply current and the rest of spans with two loops, but it will be absolutely Time Limit Exceeded.
-- An [version](./container-with-most-water-overtime.ts) of radixSort with original index in sorted array. But go with the sorted list is not a good way, we still need to loop twice, then Time Limit Exceeded.
+- A [version](./container-with-most-water-overtime.ts) of radixSort with original index in sorted array. But go with the sorted list is not a good way, we still need to loop twice, then Time Limit Exceeded.
 
   `radixSortWithIndex`, put the original index as prefix in the original data, so we can get original index without extra loops.
 
