@@ -7,7 +7,6 @@ function permute(nums: number[]): number[][] {
   let retPermute: number[][] = [];
   for (let i = 0; i < subPermute.length; ++i) {
     let len = subPermute[i].length;
-    // splice is done in place so get a temp var
     let subPermute_i = subPermute[i];
     // <=len
     for (let j = 0; j <= len; ++j) {
@@ -15,7 +14,7 @@ function permute(nums: number[]): number[][] {
         subPermute_i.slice(0, j).concat(nums[0]).concat(subPermute_i.slice(j))
       );
 
-      // console.log("after splice, ", retPermute);
+      // console.log("after push, ", retPermute);
     }
     // console.log("end j");
   }
